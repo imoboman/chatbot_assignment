@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>script.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+script.js</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;script src=</span><span class="s1">&quot;https://daiz12yp2urob.cloudfront.net/lex-web-ui-loader.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;script&gt;</span>
+  <span class="s2">var </span><span class="s0">loaderOpts = {</span>
+    <span class="s0">baseUrl: </span><span class="s1">'https://daiz12yp2urob.cloudfront.net/'</span><span class="s0">,</span>
+    <span class="s0">shouldLoadMinDeps: </span><span class="s2">true</span>
+  <span class="s0">};</span>
+  <span class="s2">var </span><span class="s0">loader = </span><span class="s2">new </span><span class="s0">ChatBotUiLoader.IframeLoader(loaderOpts);</span>
+  <span class="s2">var </span><span class="s0">chatbotUiConfig = {</span>
+          <span class="s3">/* Example of setting session attributes on parent page 
+          lex: { 
+            sessionAttributes: { 
+              userAgent: navigator.userAgent, 
+              QNAClientFilter: '' 
+            } 
+          } 
+          */</span>
+        <span class="s0">};</span>
+  <span class="s0">loader.load(chatbotUiConfig)</span>
+    <span class="s0">.</span><span class="s2">catch</span><span class="s0">(</span><span class="s2">function </span><span class="s0">(error) { console.error(error); });</span>
+<span class="s0">&lt;/script&gt;</span>
+</pre>
+</body>
+</html>
